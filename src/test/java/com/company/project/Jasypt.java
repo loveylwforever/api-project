@@ -5,7 +5,7 @@ import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
 public class Jasypt {
 
     // 密钥
-    private static final String KEY = "lerry";
+    private static final String KEY = "jamie";
 
     public static void main(String[] args) {
         String ciphertext1 = encrypt("P@ssw0rd");

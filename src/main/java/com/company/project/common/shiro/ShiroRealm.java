@@ -28,8 +28,6 @@ public class ShiroRealm extends AuthorizingRealm {
 
     /**
      * 判断传入的token是否是JwtToken
-     * @param token
-     * @return
      */
     @Override
     public boolean supports(AuthenticationToken token) {
@@ -38,8 +36,6 @@ public class ShiroRealm extends AuthorizingRealm {
 
     /**
      * 获取用户身份信息的时候 就会调用此方法 从数据库获取该用户的权限与角色信息
-     * @param principal
-     * @return
      */
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principal) {
@@ -63,9 +59,6 @@ public class ShiroRealm extends AuthorizingRealm {
 
     /**
      * 在这个方法 进行身份验证
-     * @param token
-     * @return
-     * @throws AuthenticationException
      */
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
@@ -86,7 +79,6 @@ public class ShiroRealm extends AuthorizingRealm {
 
     /**
      * 重写方法,清除当前用户的的 授权缓存
-     * @param principals
      */
     @Override
     public void clearCachedAuthorizationInfo(PrincipalCollection principals) {
@@ -95,7 +87,6 @@ public class ShiroRealm extends AuthorizingRealm {
 
     /**
      * 重写方法，清除当前用户的 认证缓存
-     * @param principals
      */
     @Override
     public void clearCachedAuthenticationInfo(PrincipalCollection principals) {

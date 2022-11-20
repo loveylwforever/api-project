@@ -25,14 +25,12 @@ public class Result implements Serializable{
 
     private Object data;
 
-    public Result setCode(Integer code) {
+    public void setCode(Integer code) {
         this.code = code;
-        return this;
     }
 
-    public Result setMessage(String message) {
+    public void setMessage(String message) {
         this.message = message;
-        return this;
     }
 
     public static Result success() {

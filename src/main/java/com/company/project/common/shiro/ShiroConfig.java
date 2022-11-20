@@ -189,7 +189,7 @@ public class ShiroConfig {
     public MethodInvokingFactoryBean getMethodInvokingFactoryBean(){
         MethodInvokingFactoryBean factoryBean = new MethodInvokingFactoryBean();
         factoryBean.setStaticMethod("org.apache.shiro.SecurityUtils.setSecurityManager");
-        factoryBean.setArguments(new Object[]{securityManager()});
+        factoryBean.setArguments(securityManager());
         return factoryBean;
     }
 

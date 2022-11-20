@@ -7,7 +7,7 @@ import org.apache.shiro.util.ByteSource;
  * md5加密工具
  */
 public class MD5Utils {
-	private static final String SALT = "ruiyeclub";
+	private static final String SALT = "md5_salt";
 	private static final String ALGORITHM_NAME = "md5";
 	private static final int HASH_ITERATIONS = 2;
 
