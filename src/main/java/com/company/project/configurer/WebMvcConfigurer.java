@@ -6,7 +6,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupp
 
 /**
  * 资源拦截器
- * @author Ray。
  */
 @Configuration
 public class WebMvcConfigurer extends WebMvcConfigurationSupport {

@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 import java.net.InetAddress;
 
 /**
- * @author Ray。
+ *
  */
 @Component
 @Slf4j
@@ -35,7 +35,7 @@ public class ApplicationStartupRunner implements ApplicationRunner {
             if (StringUtils.isNotBlank(contextPath)) {
                 url += contextPath;
             }
-//            log.info("seed 权限系统启动完毕，地址：{}", url);
+            log.info("系统启动完毕，访问入口：{}", url);
         }
     }
 }

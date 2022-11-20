@@ -7,9 +7,7 @@ import org.springframework.context.support.ReloadableResourceBundleMessageSource
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 
 /**
- * @author Ray。
- * Date: 2018-06-14
- * Time: 15:34
+ * 参数字段校验
  */
 @Configuration
 public class HibernateValidateConfig {

@@ -11,8 +11,6 @@ import java.io.Serializable;
 
 /**
  * 通用返回结果格式
- * @author Ray。
- * Date: 2018-06-15
  */
 @Builder
 @NoArgsConstructor

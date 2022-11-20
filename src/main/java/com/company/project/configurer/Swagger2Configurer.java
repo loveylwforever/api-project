@@ -14,8 +14,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * swagger2配置类
- * @author Ray。
- * @create 2020-05-04 11:51
  */
 @Configuration
 @EnableSwagger2
@@ -33,9 +31,9 @@ public class Swagger2Configurer {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("Admin后台接口文档")
-                .description("更多请咨询服务开发者Ray。")
-                .contact(new Contact("Ray。", "http://www.ruiyeclub.cn", "ruiyeclub@foxmail.com"))
+                .title("admin后台接口文档")
+                .description("更多请咨询服务开发者")
+                .contact(new Contact("jamie", "https://www.loveylwforever.com", "gaojacctno@foxmail.com"))
                 .version("1.0")
                 .build();
     }

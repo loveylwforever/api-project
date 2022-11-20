@@ -12,8 +12,6 @@ import java.util.List;
 
 /**
  * AOP记录日志的一些共用方法
- * @author Ray。
- * Date: 2018-06-17
  */
 public class LogAspectUtil {
 

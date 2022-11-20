@@ -18,9 +18,9 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 public class RedisConfigurer {
 
     /**
-     * redisTemplate 序列化使用的jdkSerializeable, 存储二进制字节码, 所以自定义序列化类
-     * @param redisConnectionFactory
-     * @return
+     * redisTemplate 序列化使用的jdk Serializable, 存储二进制字节码, 所以自定义序列化类
+     * @param redisConnectionFactory redis connection连接工厂
+     * @return RedisTemplate
      */
     @Bean
     public RedisTemplate redisTemplate(RedisConnectionFactory redisConnectionFactory) {

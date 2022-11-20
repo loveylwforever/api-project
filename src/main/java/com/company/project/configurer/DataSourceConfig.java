@@ -10,9 +10,6 @@ import javax.sql.DataSource;
 
 /**
  * 数据连接池
- * @author Ray。
- * Date: 2018-06-14
- * Time: 15:30
  */
 @Configuration
 @EnableTransactionManagement

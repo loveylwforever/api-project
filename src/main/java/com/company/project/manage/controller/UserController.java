@@ -39,12 +39,11 @@ public class UserController {
 
 	/**
 	 * 异常测试
-	 * @return
 	 */
 	@ApiOperation("异常测试")
 	@GetMapping("test")
 	public Result getTest(){
-		int i=1/0;
+		int i = 1/0;
 		return Result.success(i);
 	}
 }
