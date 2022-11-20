@@ -1,11 +1,11 @@
 /*
  Navicat Premium Data Transfer
 
- Source Server         : ruiyeclub
+ Source Server         : localhost
  Source Server Type    : MySQL
  Source Server Version : 50647
- Source Host           : ruiyeclub.cn:3306
- Source Schema         : seed_api
+ Source Host           : 127.0.0.1:3306
+ Source Schema         : api
 
  Target Server Type    : MySQL
  Target Server Version : 50647

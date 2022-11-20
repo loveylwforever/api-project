@@ -17,8 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
 
 /**
- * @author Ray。
- * Date: 2018-06-16
+ * rest请求控制器切面
  */
 @Aspect
 @Component

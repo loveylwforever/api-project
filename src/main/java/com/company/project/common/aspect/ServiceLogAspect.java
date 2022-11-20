@@ -13,8 +13,6 @@ import java.lang.reflect.Method;
 
 /**
  * service 日志记录切面
- * @author Ray。
- * Date: 2018-06-17
  */
 @Aspect
 @Component
@@ -58,8 +56,6 @@ public class ServiceLogAspect {
 
     /**
      * 获取注解中对方法的描述信息 用于service层注解
-     * @param joinPoint
-     * @return
      */
     private String getServiceMethodDescription(ProceedingJoinPoint joinPoint){
         String targetName = joinPoint.getTarget().getClass().getName();
