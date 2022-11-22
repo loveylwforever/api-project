@@ -18,7 +18,8 @@ public class Application {
         String ip = InetAddress.getLocalHost().getHostAddress();
         String port = env.getProperty("server.port") == null ? "8080" : env.getProperty("server.port");
         String contextPath = env.getProperty("server.servlet.context-path") == null ? "" : env.getProperty("server.servlet.context-path");
-        log.info("系统启动成功，访问入口：http://{}:{}/{}", ip,port,contextPath);
+        log.info("系统启动成功，访问入口：http://{}:{}/{}", ip, port, contextPath);
+        log.info("swagger文档：http://{}:{}/{}swagger-ui/index.html", ip, port, contextPath);
     }
 }
 

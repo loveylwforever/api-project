@@ -23,5 +23,5 @@ nbdist/
 .nb-gradle/
 !/app_log/
 
-### log file
+### log file ###
 logs/

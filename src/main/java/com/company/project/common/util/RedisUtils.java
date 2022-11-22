@@ -9,9 +9,7 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author Ray。
- * @version 1.0
- * @date 2020/6/29 15:04
+ *
  */
 @Component
 public class RedisUtils {
@@ -27,7 +25,7 @@ public class RedisUtils {
         return this.redisTemplate;
     }
 
-    /** -------------------key相关操作--------------------- */
+    /* -------------------key相关操作--------------------- */
 
     /**
      * 删除key

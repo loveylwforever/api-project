@@ -12,8 +12,6 @@ import java.util.regex.Pattern;
 
 /**
  * IP操作工具类
- * @author Ray。
- * Date: 2018-06-16
  */
 @Slf4j
 public class IpUtil {
@@ -29,7 +27,7 @@ public class IpUtil {
 
     /**
      * 获取请求中的ip地址：过了多级反向代理，获取的ip不是唯一的，二是包含中间代理层ip
-     * @param request
+     * @param request httpServlet请求
      * @return 可能有多个，例如：192.168.1.110， 192.168.1.120
      */
     public static String getIpAddr(HttpServletRequest request) {
@@ -57,8 +55,6 @@ public class IpUtil {
      *  获取客户端的IP地址的方法是：request.getRemoteAddr()，这种方法在大部分情况下都是有效的。
      *  但是在通过了Apache，Squid等反向代理软件就不能获取到客户端的真实IP地址。而且，如果通过了多级反向代理的话，X-Forwarded-For的值并不止一个，
      *  而是一串ip值，例如：192.168.1.110， 192.168.1.120， 192.168.1.130， 192.168.1.100。其中第一个192.168.1.110才是用户真实的ip
-     * @param request
-     * @return
      */
     public static String getRealIp(HttpServletRequest request) {
         String ip = LOCAL_IP;
@@ -89,9 +85,6 @@ public class IpUtil {
 
     /**
      * 通过各种方式获取IP
-     * @param request
-     * @param ip
-     * @return
      */
     private static String getIp(HttpServletRequest request, String ip){
         if (ip == null || ip.length() == 0 || UNKNOWN.equalsIgnoreCase(ip)) {

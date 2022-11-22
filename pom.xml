@@ -121,7 +121,7 @@
             <version>1.9.9.1</version>
         </dependency>
 
-        <!--配置文件属性加密-->
+        <!--jasypt配置文件属性加密-->
         <dependency>
             <groupId>com.github.ulisesbocchio</groupId>
             <artifactId>jasypt-spring-boot-starter</artifactId>
